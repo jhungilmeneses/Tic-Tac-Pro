@@ -111,8 +111,8 @@ The database consists of **5 relational tables**:
 2.  **`records`**: Stores scores/progress for authenticated accounts.
     *   `id` (PRIMARY KEY, AUTOINCREMENT)
     *   `user_id` (FOREIGN KEY referencing `users.id` ON DELETE CASCADE)
-    *   `pvp_highscore` (INTEGER, default 0)
-    *   `pva_highscore` (INTEGER, default 0)
+    *   `pvp_high` (INTEGER, default 0)
+    *   `pva_high` (INTEGER, default 0)
     *   `ai_progress_easy`, `ai_progress_medium`, `ai_progress_hard` (INTEGER, default 0)
 3.  **`guest_records`**: Stores scores/progress for guest accounts.
     *   `guest_id` (TEXT, UNIQUE, NOT NULL)
